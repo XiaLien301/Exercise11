@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heading Style Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 10px 22px;
+      background: #000;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .page {
+      min-height: 238px;
+      padding: 19px 22px;
+      background: #fff;
+    }
+
+    .heading-card {
+      max-width: 660px;
+      min-height: 192px;
+      margin: 0 auto;
+      padding: 8px 10px 10px;
+      background: #fff;
+      box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.38);
+    }
+
+    h1 {
+      display: inline-block;
+      margin: 0 0 29px;
+      padding: 0 2px 0;
+      border-top: 4px solid #111;
+      color: #000;
+      font-size: 40px;
+      line-height: 1.05;
+      text-shadow: 3px 2px 0 #f2a1ad;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 2px 3px;
+      border: 3px solid #d8d000;
+      outline: 1px solid #222;
+      color: #000;
+      font-size: 32px;
+      font-style: italic;
+      line-height: 1.05;
+    }
+
+    h3 {
+      margin: 27px 4px 0 0;
+      color: #000;
+      font-size: 24px;
+      text-align: right;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .page {
+        padding: 18px 12px;
+      }
+
+      .heading-card {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: clamp(28px, 8vw, 40px);
+      }
+
+      h2 {
+        font-size: clamp(22px, 6vw, 32px);
+      }
+
+      h3 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="heading-card">
+      <h1>This is heading 1</h1>
+      <h2>This is heading 2</h2>
+      <h3>This is heading 3</h3>
+    </section>
+  </main>
+</body>
+</html>
